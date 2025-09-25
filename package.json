@@ -2,7 +2,14 @@
   "name": "@pixeldrive/netfly-sdk-js",
   "version": "0.1.0",
   "description": "Unofficial SDK for Netfly API in TypeScript with ESM and CJS support",
-  "keywords": ["netfly", "sdk", "api", "typescript", "peppol", "pixeldrive"],
+  "keywords": [
+    "netfly",
+    "sdk",
+    "api",
+    "typescript",
+    "peppol",
+    "pixeldrive"
+  ],
   "license": "MIT",
   "homepage": "",
   "repository": {
@@ -14,25 +21,27 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "test": "npm run build && vitest run"
   },
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.5.3",
+    "@types/node": "^24.5.2",
     "tsup": "^8.2.4",
+    "typescript": "^5.5.3",
     "vitest": "^2.0.5"
   }
 }
