@@ -10,7 +10,8 @@
     "declaration": true,
     "outDir": "dist",
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "allowJs": true
   },
-  "include": ["src", "tests"]
+  "include": ["src", "tests", "eslint.config.mjs"],
 }
