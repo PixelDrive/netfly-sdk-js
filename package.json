@@ -1,6 +1,6 @@
 {
   "name": "@pixeldrive/netfly-sdk-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unofficial SDK for Netfly API in TypeScript with ESM and CJS support",
   "keywords": [
     "netfly",
@@ -14,7 +14,7 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/PixelDrive/netfly-sdk-js"
   },
   "publishConfig": {
     "access": "public"
